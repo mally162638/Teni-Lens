@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teni Lens | Photographer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+  <!-- Replace your whole <header class="navbar">...</header> with this block -->
+<header class="navbar" id="top">
+  <a href="#top" class="logo">Teni Lens</a>
+
+  <nav class="nav-links">
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">About</a>
+    <a href="#services">Services</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="nav-right">
+    <div class="socials">
+      <a href="https://x.com/teeniiola?s=21" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.instagram.com/teni_lens?stkn=MWlpdXFtYngyemZ0Mg==" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+    <a href="#contact" class="btn-hire">👉 Hire me</a>
+  </div>
+
+  <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- Mobile sidebar (put right after the header) -->
+<div class="overlay" id="overlay"></div>
+<aside class="sidebar" id="sidebar" aria-hidden="true">
+  <div class="sidebar-top">
+    <a href="#top" class="logo">Teni Lens</a>
+    <button class="sidebar-close" id="sidebar-close" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+
+  <nav class="sidebar-links">
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <a href="#contact" class="btn-hire sidebar-hire">👉 Hire me</a>
+
+  <div class="sidebar-socials">
+    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#" aria-label="Share"><i class="fa-solid fa-share-nodes"></i></a>
+  </div>
+</aside>
+
+<!--
+Also in index.html:
+1. Add <html lang="en"> before <head> and <body> after </head> (both are missing).
+2. Add id="services" to <section class="services">
+3. Add id="portfolio" to <section class="portfolio">
+4. Add id="blog" to <section class="blog">
+5. Add id="contact" to <section class="contact-section">
+6. Add this AFTER your style.css link:  <link rel="stylesheet" href="responsive.css">
+-->
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Capturing <span>Moments</span> That Last a Lifetime</h1>
+      <p>
+        With our passion and expertise, we strive to capture the essence of
+        your special moments and transform them into timeless memories.
+      </p>
+      <div class="hero-actions">
+        <a href="#shots" class="btn-primary">👀 Check my portfolio</a>
+        <a href="mailto:olagoketeniola2018@gmail.com" class="btn-message">
+          <i class="fa-brands fa-facebook-messenger"></i> Send a message
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="medias/heroimage.jpg" alt="Photographer holding a camera">
+      <!-- <span class="image-line"></span>
+      <span class="image-name">John Doe</span> -->
+    </div>
+  </section>
+
+   <section class="shots" id="shots">
+    <div class="shots-text">
+      <h2>My best <span>shots</span></h2>
+      <p>Welcome to the world of photography, where every moment is a work of art.</p>
+      <div class="shots-arrows">
+        <button class="arrow arrow-prev" id="prev" aria-label="Previous shot"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="arrow arrow-next" id="next" aria-label="Next shot"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="shots-viewport">
+      <div class="shots-track" id="track">
+
+        <figure class="card">
+          <img src="medias/pic1.jpg" alt="City lights">
+          <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
+          <figcaption>City lights</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="medias/pic2.jpg" alt="Downtown portrait">
+          <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
+          <figcaption>Downtown portrait</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="medias/pic3.jpg" alt="Golden hour">
+          <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
+          <figcaption>Golden hour</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="medias/pic4.jpg" alt="Street stories">
+          <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
+          <figcaption>Street stories</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="medias/pic5.jpg" alt="Quiet mornings">
+          <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
+          <figcaption>Quiet mornings</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="medias/pic6.jpg" alt="Wild frames">
+          <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
+          <figcaption>Wild frames</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="medias/pic7.jpg" alt="Night walk">
+          <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
+          <figcaption>Night walk</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="medias/pic8.jpg" alt="Shadows and light">
+          <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
+          <figcaption>Shadows and light</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="medias/pic9.jpg" alt="Faces">
+          <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
+          <figcaption>Faces</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="medias/pic10.jpg" alt="Last light">
+          <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
+          <figcaption>Last light</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Full size viewer -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <img src="" alt="" id="lightbox-img">
+  </div>
+
+
+
+  <section class="services" id="services">
+    <h2 class="services-title">Experience Creativity Service</h2>
+
+    <div class="services-grid">
+
+      <article class="service">
+        <div class="service-icon"><i class="fa-solid fa-camera"></i></div>
+        <div class="service-body">
+          <h3>Photography</h3>
+          <p>Capturing stunning visuals with an artistic touch, ensuring every shot tells a unique story.</p>
+          <a href="#" class="learn-more">Learn more &gt;</a>
+        </div>
+      </article>
+
+      <article class="service">
+        <div class="service-icon"><i class="fa-solid fa-video"></i></div>
+        <div class="service-body">
+          <h3>Videography</h3>
+          <p>Crafting compelling stories through the lens, providing high-quality video coverage for all occasions.</p>
+          <a href="#" class="learn-more">Learn more &gt;</a>
+        </div>
+      </article>
+
+      <article class="service">
+        <div class="service-icon"><i class="fa-solid fa-film"></i></div>
+        <div class="service-body">
+          <h3>Video Editing</h3>
+          <p>Transforming raw footage into captivating narratives with professional editing techniques and creative flair.</p>
+          <a href="#" class="learn-more">Learn more &gt;</a>
+        </div>
+      </article>
+
+      <article class="service">
+        <div class="service-icon">
+          <!-- drone icon -->
+          <svg viewBox="0 0 48 48" width="40" height="40" fill="currentColor" aria-hidden="true">
+            <circle cx="9" cy="9" r="6"/>
+            <circle cx="39" cy="9" r="6"/>
+            <circle cx="9" cy="39" r="6"/>
+            <circle cx="39" cy="39" r="6"/>
+            <rect x="15" y="15" width="18" height="18" rx="4"/>
+            <path d="M12 12l8 8M36 12l-8 8M12 36l8-8M36 36l-8-8" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="service-body">
+          <h3>Drone Filming</h3>
+          <p>Offering breathtaking aerial perspectives that add a unique and dramatic dimension to your projects.</p>
+          <a href="#" class="learn-more">Learn more &gt;</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+   <section class="portfolio" id="portfolio" >
+    <h2 class="portfolio-title">Moments captured for the <span>portfolio</span></h2>
+
+    <div class="portfolio-grid">
+      <div class="col">
+        <figure class="short"><img src="medias/pic10.jpg" alt="Portrait on a bench"></figure>
+        <figure class="tall fade"><img src="medias/pic2.jpg" alt="Man with a backpack"></figure>
+      </div>
+
+      <div class="col">
+        <figure class="tall"><img src="medias/pic3.jpg" alt="Woman in an orange top"></figure>
+        <figure class="short fade"><img src="medias/pic5.jpg" alt="Man crouching in a yellow hat"></figure>
+      </div>
+
+      <div class="col">
+        <figure class="short"><img src="medias/pic6.jpg" alt="Hand holding a camera"></figure>
+        <figure class="tall fade"><img src="medias/pic7.jpg" alt="Man in a wide-brim hat"></figure>
+      </div>
+    </div>
+
+    <p class="portfolio-sub">Browse through my portfolio of stunning projects.</p>
+    <a href="" class="btn-projects">👀 See all projects</a>
+
+    <hr class="section-line">
+  </section>
+
+
+
+   <section class="blog" id="blog">
+    <div class="blog-header">
+      <h2>Discover the Art of Photography</h2>
+      <p>
+        Dive into our blog to stay updated with the latest photography tips and
+        trends. Whether you're a budding photographer or a seasoned professional,
+        our blog offers a wealth of knowledge to enhance your skills:
+      </p>
+    </div>
+
+    <div class="blog-grid">
+
+      <article class="post">
+        <a href="#" class="post-image">
+          <img src="medias/city street.JPG" alt="City street at dusk">
+          <span class="tag">Tips</span>
+        </a>
+        <h3><a href="#">Mastering Composition:<br>The Key to Stunning Photos</a></h3>
+        <p class="excerpt">Learn how to create visually captivating images with effective composition techniques.</p>
+        <div class="meta">
+          <span class="author">Teni Lens</span>
+          <span class="date">11 Jan 2026 &nbsp;- 5 min read</span>
+        </div>
+      </article>
+
+      <article class="post">
+        <a href="#" class="post-image">
+          <img src="medias/(2).JPG" alt="Photographer shooting a landscape">
+          <span class="tag">Trends</span>
+        </a>
+        <h3><a href="#">Capturing the Beauty of Nature:<br>Landscape Photography Tips</a></h3>
+        <p class="excerpt">Discover the secrets to capturing breathtaking landscape photos that showcase the beauty.</p>
+        <div class="meta">
+          <span class="author">Teni Lens</span>
+          <span class="date">21 Jan 2026 &nbsp;- 3 min read</span>
+        </div>
+      </article>
+
+      <article class="post">
+        <a href="#" class="post-image">
+          <img src="medias/shooting..JPG" alt="Camera on a tripod">
+          <span class="tag">Experiences</span>
+        </a>
+        <h3><a href="#">Behind the Lens:<br>A Photographer's Journey</a></h3>
+        <p class="excerpt">Join us as we share our personal experiences and stories from our photography journey.</p>
+        <div class="meta">
+          <span class="author">Teni Lens</span>
+          <span class="date">27 Jan 2026 &nbsp;- 7 min read</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+   <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contact">
+    <div class="site-container">
+      <div class="contact-container">
+
+        <div class="contact-image">
+          <img src="medias/lasthero.jpg" alt="Professional photographer" />
+        </div>
+
+        <div class="contact-content">
+          <h2>
+            Contact<br />
+            for Professional<br />
+            services
+          </h2>
+
+          <form class="contact-form">
+            <input
+              type="text"
+              placeholder="Name and Surname"
+              required
+            />
+
+            <textarea
+              placeholder="Write something..."
+              required
+            ></textarea>
+
+            <button type="submit">Send a message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="site-container">
+
+      <div class="footer-main">
+
+        <div class="footer-brand">
+          <h3>Teni Lens</h3>
+        </div>
+
+        <div class="footer-column">
+          <h4>About me</h4>
+          <a href="#">Portfolio</a>
+          <a href="#">Services</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>FAQ</h4>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Support</a>
+          <a href="#">Careers</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Partners</h4>
+          <a href="#">Press</a>
+          <a href="#">Affiliates</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Term of use</a>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Stay tuned</h4>
+
+          <p>
+            Stay up to date with our latest features and releases.
+          </p>
+
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Enter your mail"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          © Mally 2026 Design. All rights reserved.
+        </p>
+
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies Settings</a>
+        </div>
+
+        <div class="social-links">
+        
+
+          <a href="https://x.com/teeniiola?s=21" aria-label="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+
+          <a href="https://www.instagram.com/teni_lens?stkn=MWlpdXFtYngyemZ0Mg==" aria-label="Facebook">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#" aria-label="Share">
+            <i class="fa-solid fa-share-nodes"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  
+
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
