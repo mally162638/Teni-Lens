@@ -144,6 +144,6 @@ if (contactForm) {
     const name = document.getElementById("name").value.trim();
     const message = document.getElementById("message").value.trim();
     const text = encodeURIComponent(`Hi, I'm ${name}.\n\n${message}`);
-    window.location.href = `https://wa.me/2348130299052?text=${text}`;
+    window.location.href = `https://wa.me/2348081909260?text=${text}`;
   });
 }
