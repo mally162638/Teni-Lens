@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,8 +11,8 @@
   <link rel="stylesheet" href="responsive.css">
 
 </head>
+<body>
 
-  <!-- Replace your whole <header class="navbar">...</header> with this block -->
 <header class="navbar" id="top">
   <a href="#top" class="logo">Teni Lens</a>
 
@@ -37,7 +38,7 @@
   </button>
 </header>
 
-<!-- Mobile sidebar (put right after the header) -->
+<!-- Mobile sidebar -->
 <div class="overlay" id="overlay"></div>
 <aside class="sidebar" id="sidebar" aria-hidden="true">
   <div class="sidebar-top">
@@ -49,7 +50,7 @@
 
   <nav class="sidebar-links">
     <a href="#portfolio">Portfolio</a>
-    <a href="#about">About</a>
+    <a href="#contact">About</a>
     <a href="#services">Services</a>
     <a href="#blog">Blog</a>
     <a href="#contact">Contact</a>
@@ -58,21 +59,12 @@
   <a href="#contact" class="btn-hire sidebar-hire">👉 Hire me</a>
 
   <div class="sidebar-socials">
-    <a href="https://x.com/teeniiola?s=21" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
-     <a href="https://www.instagram.com/teni_lens?stkn=MWlpdXFtYngyemZ0Mg==" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
     <a href="#" aria-label="Share"><i class="fa-solid fa-share-nodes"></i></a>
   </div>
 </aside>
-
-<!--
-Also in index.html:
-1. Add <html lang="en"> before <head> and <body> after </head> (both are missing).
-2. Add id="services" to <section class="services">
-3. Add id="portfolio" to <section class="portfolio">
-4. Add id="blog" to <section class="blog">
-5. Add id="contact" to <section class="contact-section">
-6. Add this AFTER your style.css link:  <link rel="stylesheet" href="responsive.css">
--->
 
   <section class="hero">
     <div class="hero-text">
@@ -91,8 +83,6 @@ Also in index.html:
 
     <div class="hero-image">
       <img src="medias/heroimage.jpg" alt="Photographer holding a camera">
-      <!-- <span class="image-line"></span>
-      <span class="image-name">John Doe</span> -->
     </div>
   </section>
 
@@ -110,63 +100,81 @@ Also in index.html:
       <div class="shots-track" id="track">
 
         <figure class="card">
-          <img src="medias/pic1.jpg" alt="City lights">
+          <img src="medias/pic1.jpg" alt="City lights" loading="lazy">
           <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
           <figcaption>City lights</figcaption>
         </figure>
 
         <figure class="card">
-          <img src="medias/pic2.jpg" alt="Downtown portrait" >
+          <img src="medias/pic2.jpg" alt="Downtown portrait"  loading="lazy">
           <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
           <figcaption>Downtown portrait</figcaption>
         </figure>
 
         <figure class="card">
-          <img src="medias/pic3.jpg" alt="Golden hour">
+          <img src="medias/pic3.jpg" alt="Golden hour"  loading="lazy">
           <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
           <figcaption>Golden hour</figcaption>
         </figure>
 
         <figure class="card">
-          <img src="medias/pic4.jpg" alt="Street stories" >
+          <img src="medias/pic4.jpg" alt="Street stories"  loading="lazy">
           <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
           <figcaption>Street stories</figcaption>
         </figure>
 
         <figure class="card">
-          <img src="medias/pic5.jpg" alt="Quiet mornings">
+          <img src="medias/pic5.jpg" alt="Quiet mornings" loading="lazy">
           <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
           <figcaption>Quiet mornings</figcaption>
         </figure>
 
         <figure class="card">
-          <img src="medias/pic6.jpg" alt="Wild frames" >
+          <img src="medias/pic6.jpg" alt="Wild frames"  loading="lazy">
           <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
           <figcaption>Wild frames</figcaption>
         </figure>
 
         <figure class="card">
-          <img src="medias/pic7.jpg" alt="Night walk">
+          <img src="medias/pic7.jpg" alt="Night walk" loading="lazy">
           <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
           <figcaption>Night walk</figcaption>
         </figure>
 
         <figure class="card">
-          <img src="medias/pic8.jpg" alt="Shadows and light">
+          <img src="medias/pic8.jpg" alt="Shadows and light" loading="lazy">
           <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
           <figcaption>Shadows and light</figcaption>
         </figure>
 
         <figure class="card">
-          <img src="medias/pic9.jpg" alt="Faces">
+          <img src="medias/pic9.jpg" alt="Faces" loading="lazy">
           <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
           <figcaption>Faces</figcaption>
         </figure>
 
         <figure class="card">
-          <img src="medias/pic10.jpg" alt="Last light">
+          <img src="medias/pic10.jpg" alt="Last light" loading="lazy">
           <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
           <figcaption>Last light</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="medias/newpic7.jpg" alt="Lit shot" loading="lazy">
+          <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
+          <figcaption>Lit Shot</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="medias/newpic8.jpg" alt="Style" loading="lazy">
+          <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
+          <figcaption>Style</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="medias/newpic9.jpg" alt="Night beauty" loading="lazy">
+          <button class="expand" aria-label="View full size"><i class="fa-solid fa-expand"></i></button>
+          <figcaption>Night Beauty</figcaption>
         </figure>
 
       </div>
@@ -236,12 +244,12 @@ Also in index.html:
   </section>
 
 
-   <section class="portfolio" id="portfolio" >
+   <section class="portfolio" id="portfolio">
     <h2 class="portfolio-title">Moments captured for the <span>portfolio</span></h2>
 
     <div class="portfolio-grid">
       <div class="col">
-        <figure class="short"><img src="medias/pic10.jpg" alt="Portrait on a bench" ></figure>
+        <figure class="short"><img src="medias/pic10.jpg" alt="Portrait on a bench"></figure>
         <figure class="tall fade"><img src="medias/pic2.jpg" alt="Man with a backpack"></figure>
       </div>
 
@@ -254,6 +262,7 @@ Also in index.html:
         <figure class="short"><img src="medias/pic6.jpg" alt="Hand holding a camera"></figure>
         <figure class="tall fade"><img src="medias/pic7.jpg" alt="Man in a wide-brim hat"></figure>
       </div>
+
     </div>
 
     <p class="portfolio-sub">Browse through my portfolio of stunning projects.</p>
@@ -278,7 +287,7 @@ Also in index.html:
 
       <article class="post">
         <a href="#" class="post-image">
-          <img src="medias/city street.JPG" alt="City street at dusk">
+          <img src="medias/city street.JPG" alt="City street at dusk" loading="lazy">
           <span class="tag">Tips</span>
         </a>
         <h3><a href="#">Mastering Composition:<br>The Key to Stunning Photos</a></h3>
@@ -291,7 +300,7 @@ Also in index.html:
 
       <article class="post">
         <a href="#" class="post-image">
-          <img src="medias/(2).JPG" alt="Photographer shooting a landscape">
+          <img src="medias/(2).JPG" alt="Photographer shooting a landscape" loading="lazy">
           <span class="tag">Trends</span>
         </a>
         <h3><a href="#">Capturing the Beauty of Nature:<br>Landscape Photography Tips</a></h3>
@@ -304,7 +313,7 @@ Also in index.html:
 
       <article class="post">
         <a href="#" class="post-image">
-          <img src="medias/shooting..JPG" alt="Camera on a tripod">
+          <img src="medias/shooting..JPG" alt="Camera on a tripod" loading="lazy">
           <span class="tag">Experiences</span>
         </a>
         <h3><a href="#">Behind the Lens:<br>A Photographer's Journey</a></h3>
@@ -325,7 +334,7 @@ Also in index.html:
       <div class="contact-container">
 
         <div class="contact-image">
-          <img src="medias/lasthero.jpg" alt="Professional photographer">
+          <img src="medias/lasthero.jpg" alt="Professional photographer" loading="lazy" />
         </div>
 
         <div class="contact-content">
@@ -335,14 +344,16 @@ Also in index.html:
             services
           </h2>
 
-          <form class="contact-form">
+          <form class="contact-form" id="contactForm">
             <input
               type="text"
+              id="name"
               placeholder="Name and Surname"
               required
             />
 
             <textarea
+              id="message"
               placeholder="Write something..."
               required
             ></textarea>
@@ -413,7 +424,7 @@ Also in index.html:
       <div class="footer-bottom">
 
         <p class="copyright">
-          © Mally 2026 Design. All rights reserved.
+          ©️ Mally 2026 Design. All rights reserved.
         </p>
 
         <div class="legal-links">
@@ -423,7 +434,6 @@ Also in index.html:
         </div>
 
         <div class="social-links">
-        
 
           <a href="https://x.com/teeniiola?s=21" aria-label="Twitter">
             <i class="fa-brands fa-twitter"></i>
@@ -443,10 +453,6 @@ Also in index.html:
     </div>
   </footer>
 
-  
-
-
-  
   <script src="script.js"></script>
 </body>
 </html>
