@@ -78,7 +78,6 @@ update();
 
 
 // ---------- Sticky navbar + mobile sidebar ----------
-// Paste this at the very bottom of your script.js (after update();)
 
 const navbar = document.querySelector('.navbar');
 const sidebar = document.getElementById('sidebar');
@@ -134,3 +133,17 @@ window.addEventListener('resize', () => {
     projectsBtn.textContent = '👀 See all projects';
   }
 });
+
+
+// ---------- Contact form -> WhatsApp ----------
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = document.getElementById("name").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const text = encodeURIComponent(`Hi, I'm ${name}.\n\n${message}`);
+    window.location.href = `https://wa.me/2348130299052?text=${text}`;
+  });
+}
